@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <input type="button" value="Fetch the data" id="one">
+        <div id="div">Data will be displayed here</div>
+    </div>
+    <style>
+        #div1 {
+
+            padding-top: 23%;
+            padding-left: 40%;
+
+
+        }
+
+        table,
+        th,
+        td {
+            border-collapse: collapse;
+            border: 1px solid;
+        }
+        th{
+            background-color: rgb(122, 225, 249);
+        }
+        table{
+            width: 50%;
+        }
+    </style>
+    <script>
+
+let btn = document.getElementById("one")
+let data=document.getElementById("div")
+
+
+
+btn.addEventListener('click',change);
+function change(){
+    let c=`<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Salary</th>
+    <th>DateOfJoining</th>    
+  </tr>`
+  let d=``
+  fetch('https://rawcdn.githack.com/kmitprojectschool/sem12022/788c820e40a750fecb30433c8d346457b7859abc/employee.json').then(res=>res.json()).then(res=>{
+    const users=res["Employees"]
+for(let i=0;i<users.length;i++){
+if(users[i]["Salary"]>50000 && users[i]["DateOfJoining"].slice(3, 5)=="12"){
+d+=`<tr>
+    <td>${users[i]["Name"]}</td>
+    <td>${users[i]["Address"]}</td>
+    <td>${users[i]["Salary"]}</td>
+    <td>${users[i]["DateOfJoining"]}</td>
+  </tr>`
+
+}
+}
+d+=`</table>`
+data.innerHTML=c+d
+}).catch(err=>console.log("Error occured"))
+}
+    </script>
+</body>
+</html>

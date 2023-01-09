@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EVENTIA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="/fontawesome-free/css/all.min.css">
+ 
+<style>
+.carousel-inner {
+  padding: 1em;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  padding: 100px;
+  padding-left: 0%;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+}
+ 
+.card img {
+    max-height: 100%;
+}
+@media (max-width: 767px) {
+  .card .img-wrapper {
+    height: 17em;
+  }
+}
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {background-color: #0a0a0a;}
+.button2 {background-color: #0a0a0a;}
+.button3 {background-color: #0a0a0a;}
+ 
+  </style>
+</head>
+ 
+<body style="background-color:rgba(223, 245, 146, 0.76);">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./homepage.html">EVENTIA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="./homepage.html">HOME</a>
+          <a class="nav-link" href="./eventspage.html">EVENTS</a>
+          <a class="nav-link" href="./schedulepage.html">SCHEDULE</a>
+          <a class="nav-link" href="./requestspage.html">REQUESTS</a>
+          <a class="nav-link" href="#">REPORTS</a>
+          <a class="nav-link" href="./loginpage.html">LOGIN</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <hr>
+  <hr>
+<button class="button button1">PENDING</button>
+<button class="button button2">APPROVED</button>
+<button class="button button3">DECLINED</button>
+ 
+<div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="card">
+               
+                <div class="card-body">
+                    <h2 class="card-title">EVENT NAME</h2>
+                    <h2 class="card-text">EVENT DETAILS</h2>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+               
+                <div class="card-body">
+                    <h2 class="card-title">EVENT NAME</h2>
+                    <h2 class="card-text">EVENT DETAILS</h2>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+               
+                <div class="card-body">
+                    <h2 class="card-title">EVENT NAME </h2>
+                    <h2 class="card-text">EVENT DETAILS</h2>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+               
+                <div class="card-body">
+                    <h2 class="card-title">EVENT NAME </h2>
+                    <h2 class="card-text">EVENT DETAILS</h2>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+               
+                <div class="card-body">
+                    <h2 class="card-title">EVENT NAME </h2>
+                    <h2 class="card-text">EVENT DETAILS</h2>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+               
+                <div class="card-body">
+                    <h2 class="card-title">EVENT NAME </h2>
+                    <h2 class="card-text">EVENT DETAILS</h2>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+               
+                <div class="card-body">
+                    <h2 class="card-title">EVENT NAME </h2>
+                    <h2 class="card-text">EVENT DETAILS</h2>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+               
+                <div class="card-body">
+                    <h2 class="card-title">EVENT NAME</h2>
+                    <h2 class="card-text">EVENT DETAILS</h2>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+               
+                <div class="card-body">
+                    <h2 class="card-title">EVENT NAME </h2>
+                    <h2 class="card-text">EVENT DETAILS</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+    </div>
+ 
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-linkedin"></i></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-instagram"></i></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-twitter"></i></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-facebook"></i></a></li>
+    </ul>
+  </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+var multipleCardCarousel = document.querySelector(
+  "#carouselExampleControls"
+);
+if (window.matchMedia("(min-width: 768px)").matches) {
+  var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+    interval: false,
+  });
+  var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+  var cardWidth = $(".carousel-item").width();
+  var scrollPosition = 0;
+  $("#carouselExampleControls .carousel-control-next").on("click", function () {
+    if (scrollPosition < carouselWidth - cardWidth * 4) {
+      scrollPosition += cardWidth;
+      $("#carouselExampleControls .carousel-inner").animate(
+        { scrollLeft: scrollPosition },
+        600
+      );
+    }
+  });
+  $("#carouselExampleControls .carousel-control-prev").on("click", function () {
+    if (scrollPosition > 0) {
+      scrollPosition -= cardWidth;
+      $("#carouselExampleControls .carousel-inner").animate(
+        { scrollLeft: scrollPosition },
+        600
+      );
+    }
+  });
+} else {
+  $(multipleCardCarousel).addClass("slide");
+}
+</script>
+</body>
+</html>
